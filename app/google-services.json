@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "853835836289",
+    "firebase_url": "https://alexis-pharmacy.firebaseio.com",
+    "project_id": "alexis-pharmacy",
+    "storage_bucket": "alexis-pharmacy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853835836289:android:9c86af7d7b3fde8d",
+        "android_client_info": {
+          "package_name": "com.meridian.cybraum.zulekha.alexis.alexispharmacy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853835836289-hk5kagr3huf2retbgbt9fvidsuqpen17.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.meridian.cybraum.zulekha.alexis.alexispharmacy",
+            "certificate_hash": "278d99b6a4fa00175c6dc33cea06f35abf5f9f79"
+          }
+        },
+        {
+          "client_id": "853835836289-f15prao4deihp6es8prq3hgsfcnmfu23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh4wPV599m13zmA7_x3JmvEW9S8_Oqry8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853835836289-f15prao4deihp6es8prq3hgsfcnmfu23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

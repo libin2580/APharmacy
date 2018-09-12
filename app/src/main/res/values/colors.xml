@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#20b3f1</color>
+    <color name="colorAccent">#02b2fd</color>
+    <color name="White">#ffffff</color>
+    <color name="butnbakcolr">#00a8e6</color>
+    <color name="blue">#00a8e6</color>
+    <color name="green">#FF057317</color>
+    <color name="yellow">#FFEAAB2C</color>
+    <color name="darkbluue">#116999</color>
+    <color name="dot_light_screen1">#3F51B5</color>
+    <color name="dot_light_screen2">#3F51B5</color>
+    <color name="dot_light_screen3">#3F51B5</color>
+    <color name="dot_light_screen4">#3F51B5</color>
+    <color name="dot_dark_screen1">#10954d</color>
+    <color name="dot_dark_screen2">#10954d</color>
+    <color name="dot_dark_screen3">#10954d</color>
+    <color name="dot_dark_screen4">#10954d</color>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="colorZulekha">#0abe1f</color>
+    <color name="white">#e9e7e7</color>
+    <color name="alexi">#10a3f2</color>
+    <color name="zulekha">#121d93</color>
+    <color name="sidebar_selection">#ef5ba1</color>
+    <color name="bg">#FFFFFF</color>
+
+
+
+
+    <color name="thumb_active">#ea1f80</color>
+    <color name="track_active">#ef5ba1</color>
+
+    <color name="thumb_inactive">#A5A5A5</color>
+    <color name="track_inactive">#66A5A5A5</color>
+</resources>

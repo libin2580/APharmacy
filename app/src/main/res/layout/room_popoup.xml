@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#aa000000"
+    android:layout_gravity="center"
+    android:id="@+id/linr"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_260sdp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:background="@drawable/rounded_rectangle"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center|right"
+            android:paddingRight="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp">
+            <LinearLayout
+                android:layout_width="@dimen/_30sdp"
+                android:gravity="center"
+                android:id="@+id/closebutton"
+                android:layout_height="@dimen/_22sdp">
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:background="@drawable/close" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:background="@drawable/room"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="@dimen/_60sdp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center|right"
+                android:layout_weight=".5">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="#000"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:text="Please Enter "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="#000"
+                    android:text="Room Number "/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight=".5">
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:singleLine="true"
+                            android:id="@+id/room_no"
+                            android:hint="  "
+                            android:background="@null"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_5sdp"
+                    android:background="@drawable/line"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="@dimen/_50sdp">
+                                <LinearLayout
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:id="@+id/ok"
+                                    android:background="@drawable/popup_corner">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_14sdp"
+                                        android:textColor="#FFF"
+                                        android:text="OK"/>
+                                </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:visibility="gone"
+        android:indeterminateTint="#23a6f8"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

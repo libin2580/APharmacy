@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/home_slide_bg"
+    android:id="@+id/layout"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight=".1">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/back"
+                android:layout_weight=".2">
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:background="@drawable/arrow_back"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight=".8">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="#00609c"
+                    android:id="@+id/home_txt"
+                    android:text="Order Medicine"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight=".2">
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            android:id="@+id/order_two"
+            android:visibility="visible"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="#ece8e8"
+                android:layout_weight=".85">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:id="@+id/attach1"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/camara"
+                                android:background="@drawable/ic_photo_camera_black_24dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/camara"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:textColor="#00609c"
+                                android:text="Add Prescription"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:scaleType="centerCrop"
+
+                                android:id="@+id/picture"/>
+                            <LinearLayout
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="top|right|center"
+                                android:visibility="gone"
+                                android:gravity="center"
+                                android:id="@+id/lin_close">
+                                <ImageView
+                                    android:layout_width="@dimen/_22sdp"
+                                    android:layout_height="@dimen/_22sdp"
+                                    android:background="@drawable/img_close"
+                                    />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:id="@+id/attach2"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/camara1"
+                                android:background="@drawable/ic_photo_camera_black_24dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/camara1"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:textColor="#00609c"
+                                android:text="Add Prescription"/>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="top|right|center"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:id="@+id/lin_close2">
+                                <ImageView
+                                    android:layout_width="@dimen/_22sdp"
+                                    android:layout_height="@dimen/_22sdp"
+                                    android:background="@drawable/img_close"
+                                    />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:id="@+id/attach3"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/camara2"
+                                android:background="@drawable/ic_photo_camera_black_24dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/camara2"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:textColor="#00609c"
+                                android:text="Add Prescription"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:scaleType="centerCrop"
+                                android:id="@+id/picture3"/>
+                            <LinearLayout
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="top|right|center"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:id="@+id/lin_close3">
+                                <ImageView
+                                    android:layout_width="@dimen/_22sdp"
+                                    android:layout_height="@dimen/_22sdp"
+                                    android:background="@drawable/img_close"
+                                    />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/picture2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginBottom="12dp"
+                                android:layout_marginLeft="13dp"
+                                android:layout_marginStart="13dp"
+                                android:scaleType="centerCrop" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:background="#fff"
+                        android:id="@+id/attach4"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/camara3"
+                                android:background="@drawable/ic_photo_camera_black_24dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/camara3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:textColor="#00609c"
+                                android:text="Add Prescription"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:scaleType="centerCrop"
+
+                                android:id="@+id/picture4"/>
+                            <LinearLayout
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="top|right|center"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:id="@+id/lin_close4">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_22sdp"
+                                    android:layout_height="@dimen/_22sdp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_below="@+id/lin_close3"
+                                    android:layout_marginLeft="14dp"
+                                    android:layout_marginStart="14dp"
+                                    android:background="@drawable/img_close" />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight=".15">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/proceed"
+                    android:background="@drawable/rounded_rectangle_button"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Proceed"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".8"
+            android:id="@+id/order_three"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:gravity="center|bottom"
+                android:orientation="vertical"
+                android:layout_weight=".5">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center|bottom"
+                    android:orientation="vertical">
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/handpick"
+                        android:id="@+id/handpick"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Handpick"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:gravity="center|top"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_weight=".5">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/deliver"
+                    android:id="@+id/deliver"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Deliver here"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".8"
+            android:id="@+id/order_four" android:visibility="gone"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_260sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center|right"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp">
+                    <LinearLayout
+                        android:layout_width="@dimen/_30sdp"
+                        android:gravity="center"
+                        android:id="@+id/closebutton"
+                        android:layout_height="@dimen/_22sdp">
+                        <ImageView
+                            android:layout_width="@dimen/_22sdp"
+                            android:layout_height="@dimen/_22sdp"
+                            android:background="@drawable/img_close" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_90sdp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:background="@drawable/room"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="@dimen/_60sdp">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center|right"
+                        android:layout_weight=".5">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_14sdp"
+                            android:textColor="#000"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:text="Please Enter "/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_14sdp"
+                            android:textColor="#000"
+                            android:text="Room Number "/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:layout_weight=".5">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000"
+                            android:singleLine="true"
+                            android:id="@+id/room_no"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:background="@null"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_5sdp"
+                            android:background="@drawable/line"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="@dimen/_50sdp">
+                    <LinearLayout
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/ok"
+                        android:background="@drawable/popup_corner">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_14sdp"
+                            android:textColor="#FFF"
+                            android:text="OK"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressWheel"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
